@@ -20,3 +20,47 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for images */
+.section img {
+  max-width: 50%;  /* Adjusts image size */
+  margin: 10px;
+}
+
+/* Text styling */
+.section .text {
+  max-width: 50%;
+  padding: 20px;
+}
+
+.section .text h2 {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  font-size: 18px;
+  color: #ffc720;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .section img {
+    max-width: 80%; /* Makes the image width smaller on mobile */
+    margin: 10px 0;
+  }
+
+  .section .text {
+    max-width: 80%;
+  }
+}
