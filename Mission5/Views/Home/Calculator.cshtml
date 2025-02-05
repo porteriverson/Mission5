@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Personal Training";
+}
+<h1>@ViewData["Title"]</h1>
+<br><br>
+<h3>Request a training with me</h3>
+
+<form id="calculate" action="">
+    <label for="perWeek">How many training sessions <b>PER WEEK</b> do you want? </label>
+    <input id="perWeek" type="number" min="0" max="4" required>
+    <br>
+    <label for="progLength">Pick your program length (6, 8, 10 week programs available) </label>
+    <select name="progLength" id="progLength" required>
+        <option value="6">6 week program</option>
+        <option value="8">8 week program</option>
+        <option value="10">10 week program</option>
+    </select>
+    <br>
+    <label for="rate">Each training is a 1 hour session and my hourly rate is </label>
+    <input type="text" id="rate" value="$25" readonly>
+    <br>
+    <input type="button" id="btnSubmit" value="Calculate Total Cost">
+</form>
+<br><br>
+<p>Use this page to calculate how much the trainings will cost.</p>
