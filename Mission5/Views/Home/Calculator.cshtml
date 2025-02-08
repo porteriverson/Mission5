@@ -7,15 +7,15 @@
 
 <div class="section">
     <p>With over a decade of playing competitive soccer and 4 years of training youth players,
-        I will help your child raise the level of play after just a few weeks of training.</p>
-    <br>
-    <p>This form will estimate the cost of a training program based on session frequency and length of the program</p>
+        I will help your child raise the level of play after just a few weeks of training.
+    <br> <br>
+    This form will estimate the cost of a training program based on session frequency and length of the program</p>
 </div>
 
-<div>
+<div class="form-group">
     <form id="calculate" action="">
         <label for="perWeek">How many training sessions <b>PER WEEK</b> do you want? (max of 4)</label>
-        <input id="perWeek" type="number" min="0" max="4" required>
+        <input class="numberInput" id="perWeek" type="number" min="0" max="4" required>
         <br>
         <label for="progLength">Pick your program length (6, 8, 10 week programs available) </label>
         <select name="progLength" id="progLength" required>
@@ -27,7 +27,9 @@
         <label for="rate">Each training is a 1-hour session and my hourly rate is </label>
         <input type="text" id="rate" value="$25" readonly>
         <br>
-        <input type="button" id="btnSubmit" value="Calculate Total Cost">
+        <button id="btnSubmit" type="button">Calculate Total Cost</button>
     </form>
+    <div id="output">
+    </div>
 </div>
 <br><br>

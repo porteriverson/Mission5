@@ -8,6 +8,8 @@
 
     <ItemGroup>
       <None Include="wwwroot\img\kicking.png" />
+      <None Include="wwwroot\soccer-ball-variant.png" />
+      <Content Include="wwwroot\soccer-ball.png" />
     </ItemGroup>
 
 </Project>

@@ -7,8 +7,17 @@ $(document).ready(function()
     $("#btnSubmit").click(function () {
         let perWeek = parseInt($("#perWeek").val());
         let progLength = parseInt($("#progLength").val());
-        let cost = perWeek * progLength * 25;
-        alert("Total cost: $" + cost);
+        if (!isNaN(perWeek) &&  // checks if perWeek field is a number
+            (0 < perWeek) &&  // checks to make sure it is positive
+            (perWeek <= 4)) // checks if perweek is <= 4
+        {
+            let cost = perWeek * progLength * 25;
+            $("#output").html("Total cost: $" + cost).fadeIn();
+        }
+        else
+        {
+            $("#output").html("Please enter valid inputs");
+        }
     });
 });
 

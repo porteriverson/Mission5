@@ -49,6 +49,28 @@ body {
   color: #ffc720;
 }
 
+.form-group input label{
+  align-items: center;
+}
+
+.numberInput {
+  width: 5%;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: darkgreen;
+}
+
+button
+{
+  background-color: lightgreen;
+}
+
+button:hover {
+  background-color: green; 
+}
+
 /* For mobile responsiveness */
 @media (max-width: 768px) {
   .section {
